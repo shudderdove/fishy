@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Fishie</name>
+    <description></description>
+    <version>1</version>
+    <author>hielo777</author>
+    <author-email>diegoli@microsoft.com</author-email>
+    <author-website>http://blogs.msdn.com/b/gamewords777/</author-website>
+    <app-id>hielo777</app-id>
+    <unique-id>3kj3edrkpqto5</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra.com" id="win8" version="1">Windows Store</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Brad Larson" id="highlightshadow">Highlight shadow</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML 5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Preview mode">HTTP</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Gift" sid="1989016944754634">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="exploding" sid="3752032987475123" type="number" />
+                <instance-variable name="warningUID" sid="4154019385960718" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="6835266150055041">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="5311667733870971">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="7264287617160109">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1015102664704101" speed="5">
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.652174" original-source="C:\Users\MLH-Admin\Desktop\thumb_goldfish_pescetto.png">
+                        <collision-poly>
+                            <point x="0.3625" y="0.3625" />
+                            <point x="0.5" y="0.2625" />
+                            <point x="0.64375" y="0.35625" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.70625" y="0.70625" />
+                            <point x="0.5" y="0.80625" />
+                            <point x="0.30625" y="0.69375" />
+                            <point x="0.275" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="explosion" pingpong="0" repeatcount="1" repeatto="0" sid="8943274357179069" speed="5">
+                    <frame duration="1" hotspotX="0.525253" hotspotY="0.597826" original-source="C:\Users\MLH-Admin\Desktop\First\thumb_goldfish_pescetto.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.6125" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.478261" />
+                            <point x="1" y="1" />
+                            <point x="0.4875" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.459627" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Block" sid="6996923610957749">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1472930190732513">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6117597776286893" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Wall" sid="8483986971024302">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6466320280068849" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BGImg" sid="5246359883552809">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9436287514184435" speed="5">
+                    <frame duration="1" hotspotX="0.509375" hotspotY="0.5" original-source="C:\Users\MLH-Admin\Desktop\First\Sea backround.jpg">
+                        <collision-poly>
+                            <point x="0.00236407" y="0.00151286" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.00472813" y="0.996974" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Blimp" sid="6331106086367146">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="2781400201302973">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="4468412563121813">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5639368771350295" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.498507" original-source="C:\Users\MLH-Admin\Desktop\First\whale6.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.00800002" />
+                            <point x="1" y="0" />
+                            <point x="0.980716" y="0.5" />
+                            <point x="0.997245" y="0.992" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Phone" sid="5459203166240407">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="76719220542748" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503546">
+                        <collision-poly>
+                            <point x="0.0333333" y="0.0141844" />
+                            <point x="0.5" y="0" />
+                            <point x="0.95" y="0.0212766" />
+                            <point x="0.983333" y="0.496454" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.992908" />
+                            <point x="0.05" y="0.978723" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WebStorage" sid="2680892717952358">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type name="ScoreLabel" sid="9939935683530984">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="HiScore" sid="9420748981933238">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LivesLabel" sid="8040805025848718">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Keyboard" sid="3715878618523922">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Touch" sid="5025809382899123">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Ouch" sid="916043080821137">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="3702370804616544">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="2845601805772505">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="446966774909501" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MLH-Admin\Desktop\First\risebubs2.gif">
+                        <collision-poly>
+                            <point x="0.5" y="0.242424" />
+                            <point x="0.640625" y="0.348485" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.671875" y="0.681818" />
+                            <point x="0.5" y="0.80303" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PauseText" sid="8089896704672217">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="AdverText" sid="4297673301457824">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PauseLayer" sid="9467474718451831">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7571310930755085" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BonusJump" sid="1898920472583094">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1794395406939088">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="6298467978944429">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Restart" sid="135034015656578">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="9686299003093649">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="ShadowCaster" sid="253449810862414">
+                    <behavior id="shadowcaster" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="HighlightShadow">
+                    <effect id="highlightshadow" />
+                </effect-type>
+            </effects>
+        </object-type>
+        <object-type name="CheckMyGames" sid="7378909272645344">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Browser" sid="8350751267537845">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Windows8" sid="464104467387177">
+            <plugin id="win8" />
+        </object-type>
+        <object-type name="ShareButton" sid="7956169464568059">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="PauseButton" sid="8489915375720312">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="MenuButton" sid="4256544142363782">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Share" sid="8806296841347882">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="warning" sid="3882754184997706">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="5289799426736671">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="3777888258993639">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="249481617391371">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2441985353319483" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.148148" y="0.148148" />
+                            <point x="0.5" y="0" />
+                            <point x="0.851852" y="0.148148" />
+                            <point x="1" y="0.5" />
+                            <point x="0.851852" y="0.851852" />
+                            <point x="0.5" y="1" />
+                            <point x="0.148148" y="0.851852" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="live" sid="2957739598860882">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="exploding" sid="2688616523178408" type="number" />
+                <instance-variable comment="when clicked add life" name="Variable1" sid="200019074295111" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="4987852654733076">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="2530540947968627">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="8000074892109822">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4788641542823487" speed="5">
+                    <frame duration="1" hotspotX="0.503311" hotspotY="0.505263" original-source="C:\Users\MLH-Admin\Desktop\First\AN15.gif">
+                        <collision-poly>
+                            <point x="0.245033" y="0.389474" />
+                            <point x="0.496689" y="0.0736842" />
+                            <point x="0.92053" y="0.126316" />
+                            <point x="0.986755" y="0.494737" />
+                            <point x="0.874172" y="0.8" />
+                            <point x="0.496689" y="0.631579" />
+                            <point x="0.145695" y="0.768421" />
+                            <point x="0.172185" y="0.494737" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="green" pingpong="0" repeatcount="1" repeatto="0" sid="1116918832593636" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\MLH-Admin\Desktop\First\thumb_Goldfish_01.png">
+                        <collision-poly>
+                            <point x="0.3625" y="0.3625" />
+                            <point x="0.5" y="0.2625" />
+                            <point x="0.64375" y="0.35625" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.70625" y="0.70625" />
+                            <point x="0.5" y="0.80625" />
+                            <point x="0.30625" y="0.69375" />
+                            <point x="0.275" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="464091703382447">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Fishie" sid="171033565389182">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="374293744280360">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854995037310287" speed="5">
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.50505" original-source="C:\Users\MLH-Admin\Desktop\First\a_eye.gif">
+                        <collision-poly>
+                            <point x="0.121739" y="0.141414" />
+                            <point x="0.495652" y="0.10101" />
+                            <point x="0.817391" y="0.212121" />
+                            <point x="0.895652" y="0.494949" />
+                            <point x="0.895652" y="0.878788" />
+                            <point x="0.495652" y="0.929293" />
+                            <point x="0.147826" y="0.828283" />
+                            <point x="0.0782609" y="0.494949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game.xml</layout>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>GameES.xml</event-sheet>
+        <event-sheet>MenuES.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="WebStorage" uid="45" />
+        <global-instance type="Keyboard" uid="12" />
+        <global-instance type="Touch" uid="50">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="69" />
+        <global-instance type="Windows8" uid="70">
+            <properties>
+                <test-mode>No</test-mode>
+                <about-setting>Yes</about-setting>
+                <support-setting>Yes</support-setting>
+                <privacy-setting>Yes</privacy-setting>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
